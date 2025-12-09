@@ -12,7 +12,7 @@
       <!--#region header-->
       <div class="flex justify-between flex-col items-center w-full">
         <header
-          class="header w-full md:w-[80%] h-20 md:h-24 px-4 md:px-8 flex flex-row-reverse justify-between bg-white md:bg-white rounded-b-2xl md:rounded-b-2xl items-center fixed top-0 z-50 md:left-1/2 md:-translate-x-1/2 md:max-w-[1440px]"
+          class="header w-full md:w-[80%] h-20 md:h-24 px-4 md:px-8 flex flex-row-reverse justify-between bg-white md:bg-white rounded-b-2xl md:rounded-none items-center fixed top-0 z-50 md:left-1/2 md:-translate-x-1/2 md:max-w-[1440px]"
         >
           <div
             class="w-24 md:w-[122px] h-9 md:h-10 bg-[#194BF0] text-white text-xs md:text-[13px] transition duration-300 text-center leading-9 md:leading-10 rounded-xl hover:bg-[#153bbd]"
@@ -35,7 +35,7 @@
               class="hidden md:flex flex-row-reverse gap-10 items-center justify-center"
             >
               <a
-                href="https://eh3un.github.io/riot-contacts/"
+                href="http://eh3un.github.io/riot-contacts/"
                 class="font-medium-es text-[16px] text-[#353535] hover:text-[#194BF0] transition duration-300"
               >
                 تماس با ما
@@ -68,10 +68,53 @@
           </div>
           <div>
             <img
-              class="w-14 h-8 md:w-[151px] md:h-[60px]"
+              class="w-14 h-8 md:w-[151px] md:h-[60px] hidden md:block"
               src="./src/images/header/Logo.png"
               alt=""
             />
+          </div>
+          <div class="relative md:hidden">
+            <details class="relative">
+              <summary
+                class="flex items-center cursor-pointer list-none p-5 -m-1 focus:outline-none"
+                aria-haspopup="true"
+              >
+                <img
+                  class="w-7 h-7"
+                  src="./src/images/header/burger-menu-svgrepo-com.svg"
+                  alt="menu"
+                />
+              </summary>
+              <div
+                class="absolute top-full right-0 mt-2 w-[360px] bg-white rounded-lg shadow-lg py-2 z-50 ring-1 ring-black/5 flex flex-col justify-center items-center"
+              >
+                <a
+                  href="#"
+                  class="block px-5 py-2 text-[16px] text-[#353535] hover:text-[#194BF0] whitespace-nowrap"
+                  >رزرو خودرو</a
+                >
+                <a
+                  href="#"
+                  class="block px-5 py-2 text-[16px] text-[#353535] hover:text-[#194BF0] whitespace-nowrap"
+                  >خدمات ما</a
+                >
+                <a
+                  href="https://eh3un.github.io/riot-blog/"
+                  class="block px-5 py-2 text-[16px] text-[#353535] hover:text-[#194BF0] whitespace-nowrap"
+                  >بلاگ</a
+                >
+                <a
+                  href="https://eh3un.github.io/riot-about/"
+                  class="block px-5 py-2 text-[16px] text-[#353535] hover:text-[#194BF0] whitespace-nowrap"
+                  >درباره ما</a
+                >
+                <a
+                  href="https://eh3un.github.io/riot-contacts/"
+                  class="block px-5 py-2 text-[16px] text-[#353535] hover:text-[#194BF0] whitespace-nowrap"
+                  >تماس با ما</a
+                >
+              </div>
+            </details>
           </div>
         </header>
         <div
@@ -91,15 +134,15 @@
             <h2>درباره ما</h2>
           </div>
           <div
-            class="flex md:flex-row-reverse absolute top-[55%] md:top-[230px] left-1/2 -translate-x-1/2 md:left-auto md:right-[785px] md:translate-x-0 z-31 text-white font-medium-es text-sm md:text-[16px] gap-1 items-center justify-center"
+            class="flex md:flex-row absolute top-[55%] md:top-[230px] left-1/2 -translate-x-1/2 md:left-auto md:right-[785px] md:translate-x-0 z-31 text-white font-medium-es text-sm md:text-[16px] gap-1 items-center justify-center"
           >
             <p>اتورنت</p>
             <img
-              class="w-4 md:w-3"
-              src="./src/images/header/svgexport-44.svg"
+              class="w-4 md:w-5"
+              src="./src/images/header/arrow-left.svg"
               alt=""
             />
-            <p>مقالات</p>
+            <p>درباره ما</p>
           </div>
         </div>
       </div>
@@ -405,14 +448,14 @@
             <div>
               <a
                 class="font-medium-es hover:text-[#194BF0] transition delay-75"
-                href="#"
+                href="eh3un.github.io/riot-contacts/"
                 >تماس با ما</a
               >
             </div>
             <div>
               <a
                 class="font-medium-es hover:text-[#194BF0] transition delay-75"
-                href="#"
+                href="eh3un.github.io/riot-about/"
                 >درباره ما</a
               >
             </div>
